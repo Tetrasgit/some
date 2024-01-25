@@ -1,14 +1,15 @@
-export function card(wiidth, height, background, border) {
- const main = document.getElementsByClassName('main');
- const container = document.createElement('div');
- main[0].appendChild(container);
- const title = document.createElement('h1');
- title.innerHTML = 'hello';
- title.style.color = 'blue';
- container.appendChild(title);
+//const container = document.querySelector(".container");
 
- container.style.width = wiidth;
+export function card(width, height, backgroundColor, borderRadius) {
+ const mainContainer = document.querySelector('.main');
+ const container = document.createElement('div');
+ mainContainer.appendChild(container);
+ const title = document.createElement('h1');
+ title.innerHTML = 'hello!!!';
+ title.style.color = 'gold';
+ container.appendChild(title);
+ container.style.width = width;
  container.style.height = height;
- container.style.background = background;
- container.style.border = border;
+ container.style.backgroundColor = backgroundColor;
+ container.style.borderRadius = borderRadius;
 }
